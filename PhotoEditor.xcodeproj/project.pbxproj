@@ -10,7 +10,6 @@
 		651A97CC2C942D2000750914 /* PhotoEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A97CB2C942D2000750914 /* PhotoEditorApp.swift */; };
 		651A97CE2C942D2000750914 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A97CD2C942D2000750914 /* AuthorizationView.swift */; };
 		651A97D02C942D2200750914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651A97CF2C942D2200750914 /* Assets.xcassets */; };
-		651A97D32C942D2200750914 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 651A97D22C942D2200750914 /* Preview Assets.xcassets */; };
 		651A97DA2C9448FC00750914 /* AuthorizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651A97D92C9448FC00750914 /* AuthorizationViewModel.swift */; };
 		651A97DD2C944E2000750914 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 651A97DC2C944E2000750914 /* FirebaseAuth */; };
 		651A97DF2C94529400750914 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 651A97DE2C94529400750914 /* GoogleService-Info.plist */; };
@@ -26,7 +25,6 @@
 		651A97CB2C942D2000750914 /* PhotoEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditorApp.swift; sourceTree = "<group>"; };
 		651A97CD2C942D2000750914 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		651A97CF2C942D2200750914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		651A97D22C942D2200750914 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		651A97D92C9448FC00750914 /* AuthorizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationViewModel.swift; sourceTree = "<group>"; };
 		651A97DE2C94529400750914 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		651A97E02C947AAB00750914 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
@@ -68,26 +66,33 @@
 		651A97CA2C942D2000750914 /* PhotoEditor */ = {
 			isa = PBXGroup;
 			children = (
-				651A97E92C9822FD00750914 /* Info.plist */,
 				651A97CB2C942D2000750914 /* PhotoEditorApp.swift */,
-				651A97CD2C942D2000750914 /* AuthorizationView.swift */,
-				651A97E72C980E6A00750914 /* AlertError.swift */,
-				651A97D92C9448FC00750914 /* AuthorizationViewModel.swift */,
-				651A97E02C947AAB00750914 /* Modifiers.swift */,
+				651A97E92C9822FD00750914 /* Info.plist */,
 				651A97DE2C94529400750914 /* GoogleService-Info.plist */,
 				651A97CF2C942D2200750914 /* Assets.xcassets */,
-				651A97D12C942D2200750914 /* Preview Content */,
-				651A97EA2C9843B100750914 /* EditorView.swift */,
+				651A97F12C9881D000750914 /* Authorization */,
+				651A97F22C9883EA00750914 /* Editor */,
+				651A97E02C947AAB00750914 /* Modifiers.swift */,
 			);
 			path = PhotoEditor;
 			sourceTree = "<group>";
 		};
-		651A97D12C942D2200750914 /* Preview Content */ = {
+		651A97F12C9881D000750914 /* Authorization */ = {
 			isa = PBXGroup;
 			children = (
-				651A97D22C942D2200750914 /* Preview Assets.xcassets */,
+				651A97CD2C942D2000750914 /* AuthorizationView.swift */,
+				651A97D92C9448FC00750914 /* AuthorizationViewModel.swift */,
+				651A97E72C980E6A00750914 /* AlertError.swift */,
 			);
-			path = "Preview Content";
+			path = Authorization;
+			sourceTree = "<group>";
+		};
+		651A97F22C9883EA00750914 /* Editor */ = {
+			isa = PBXGroup;
+			children = (
+				651A97EA2C9843B100750914 /* EditorView.swift */,
+			);
+			path = Editor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +162,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				651A97D32C942D2200750914 /* Preview Assets.xcassets in Resources */,
 				651A97D02C942D2200750914 /* Assets.xcassets in Resources */,
 				651A97DF2C94529400750914 /* GoogleService-Info.plist in Resources */,
 			);
@@ -313,6 +317,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoEditor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -343,6 +348,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PhotoEditor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

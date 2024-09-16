@@ -19,11 +19,11 @@ struct AuthorizationView: View {
                 .font(.system(size: 20))
                 .bold()
             
-            TextField("Login", text: $loginText)
+            TextField("Логин", text: $loginText)
                 .keyboardType(.emailAddress)
                 .textFieldStyle(.roundedBorder)
             
-            SecureField("Password", text: $passwordText)
+            SecureField("Пароль", text: $passwordText)
                 .textFieldStyle(.roundedBorder)
             
             HStack {
@@ -79,7 +79,6 @@ struct AuthorizationView: View {
                 }
             }
             
-            
         }
         .padding()
         .alert(isPresented: $isAlertPresented) {
@@ -92,7 +91,7 @@ struct AuthorizationView: View {
                 Text("Введите электронную почту для восстановления пароля")
                     .multilineTextAlignment(.center)
                 
-                TextField("Login", text: $loginText)
+                TextField("Логин", text: $loginText)
                     .keyboardType(.emailAddress)
                     .textFieldStyle(.roundedBorder)
                 
