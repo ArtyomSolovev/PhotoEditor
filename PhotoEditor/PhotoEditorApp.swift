@@ -23,7 +23,7 @@ struct PhotoEditorApp: App {
     
     var body: some Scene {
         WindowGroup {
-            EditorView()
+            AuthorizationView()
         }
     }
 }
