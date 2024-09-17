@@ -108,6 +108,7 @@ struct AuthorizationView: View {
         })
         .fullScreenCover(isPresented: $isContentPresented, content: {
             EditorView()
+                .environmentObject(ImageEditingViewModel())
         })
     }
     
