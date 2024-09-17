@@ -8,6 +8,7 @@ struct EditorView: View {
     @State private var showCamera = false
     @State private var selectedImage: UIImage?
     @State private var isPresentedCanvas = false
+    @State private var isPresentedFilters: Bool = false
     
     var body: some View {
         VStack {
@@ -44,6 +45,11 @@ struct EditorView: View {
                 isPresentedCanvas = true
             }
             .customButtonModifier()
+            
+            Button("Добавить фльтр") {
+                isPresentedFilters = true
+            }
+            .customButtonModifier()
         }
         .padding()
         .sheet(isPresented: $isPresentedCanvas, content: {
@@ -56,6 +62,9 @@ struct EditorView: View {
             .onDisappear {
                 viewModel.cancelImageEditing()
             }
+        })
+        .sheet(isPresented: $isPresentedFilters, content: {
+            ImageFilterView(image: selectedImage ?? UIImage())
         })
     }
 }

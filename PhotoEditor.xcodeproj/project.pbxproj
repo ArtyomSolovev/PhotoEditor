@@ -21,6 +21,8 @@
 		65B9BA612C98DED7006F3374 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9BA602C98DED7006F3374 /* CanvasView.swift */; };
 		65B9BA632C98DF5E006F3374 /* ImageEditingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9BA622C98DF5E006F3374 /* ImageEditingViewModel.swift */; };
 		65B9BA672C99763D006F3374 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9BA662C99763D006F3374 /* AccessCameraView.swift */; };
+		65B9BA692C997ADD006F3374 /* ImageFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9BA682C997ADD006F3374 /* ImageFilterView.swift */; };
+		65B9BA6B2C997AFB006F3374 /* ImageFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B9BA6A2C997AFB006F3374 /* ImageFilterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		65B9BA602C98DED7006F3374 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		65B9BA622C98DF5E006F3374 /* ImageEditingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageEditingViewModel.swift; sourceTree = "<group>"; };
 		65B9BA662C99763D006F3374 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
+		65B9BA682C997ADD006F3374 /* ImageFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFilterView.swift; sourceTree = "<group>"; };
+		65B9BA6A2C997AFB006F3374 /* ImageFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFilterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				651A97EA2C9843B100750914 /* EditorView.swift */,
+				65B9BA682C997ADD006F3374 /* ImageFilterView.swift */,
+				65B9BA6A2C997AFB006F3374 /* ImageFilterViewModel.swift */,
 				65B9BA662C99763D006F3374 /* AccessCameraView.swift */,
 				65B9BA602C98DED7006F3374 /* CanvasView.swift */,
 				65B9BA622C98DF5E006F3374 /* ImageEditingViewModel.swift */,
@@ -183,8 +189,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B9BA692C997ADD006F3374 /* ImageFilterView.swift in Sources */,
 				651A97E82C980E6A00750914 /* AlertError.swift in Sources */,
 				65B9BA632C98DF5E006F3374 /* ImageEditingViewModel.swift in Sources */,
+				65B9BA6B2C997AFB006F3374 /* ImageFilterViewModel.swift in Sources */,
 				65B9BA612C98DED7006F3374 /* CanvasView.swift in Sources */,
 				651A97DA2C9448FC00750914 /* AuthorizationViewModel.swift in Sources */,
 				651A97CE2C942D2000750914 /* AuthorizationView.swift in Sources */,
